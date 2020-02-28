@@ -1,6 +1,6 @@
 package hw;
 
-public class Wall implements Obstraction{
+public class Wall implements Obstraction {
     static float height;
 
     public Wall(float height) {
