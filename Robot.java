@@ -21,7 +21,7 @@ public class Robot implements Players {
         if(Road.distance <= runLimit) {
             System.out.println("Робот " + name + " пробежал дистанцию");
         }else{
-            System.out.println("Робот " + name + " устал");
+            System.out.println("Робот " + name + " устал ");
             onDistance = false;
         }
     }
