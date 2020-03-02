@@ -1,8 +1,5 @@
 package hw2;
 
-import hw3.MyArrayDataException;
-import hw3.MyArrySizeExeption;
-
 public class Main {
     public static void main(String[] args){
         String [][] arr = {{"2", "4", "3", "1"},
