@@ -14,7 +14,7 @@ public class hw3 {
         }
         System.out.println(map);
 
-        //2
+        // 2
         Contacts contact = new Contacts();
         contact.add("Zel", 228);
         contact.add("Zel", 223);
