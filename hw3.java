@@ -1,6 +1,6 @@
 package hw3;
 
-import hw4.Contacts;
+import Contacts;
 
 import java.util.*;
 
