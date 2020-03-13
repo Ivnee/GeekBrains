@@ -9,6 +9,7 @@ public class Main {
         arr2(array);
     }
 
+    //Метод основного потока
     static void arr(float[] array) {
         for (int i = 0; i < size ; i++) {
             array[i] = 1;
@@ -20,6 +21,7 @@ public class Main {
         System.out.println("Основной поток " + (System.currentTimeMillis() - a));
 
     }
+    //Многопоточный метод
         static void arr2(float[] array){
         for (int i = 0; i <size ; i++) {
             array[i] = 1;
@@ -28,6 +30,7 @@ public class Main {
         float [] a1 = new float[half];
         float [] a2 = new float[half];
 
+        //поток 1
         Thread t1 = new Thread(() -> {
             System.arraycopy(array, 0, a1, 0, half );
             for (int i = 0; i < half; i++) {
@@ -37,6 +40,8 @@ public class Main {
         });
         System.out.println();
 
+
+        //поток 2
         Thread t2 = new Thread(() ->{
             System.arraycopy(array, half, a2, 0, half);
             for (int i = 0; i < half ; i++) {
