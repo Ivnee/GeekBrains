@@ -14,8 +14,8 @@ public class Box <T extends Fruit> {
     public void getFruitAmount(){
         System.out.println("Количество фруктво в коробке: " + al.size());
     }
-    public Float getWeight  (){
-        Float boxWeight = 0f;
+    public float getWeight  (){
+        float boxWeight = 0f;
         for(T w: al){
             boxWeight += w.getWeight().floatValue();
         }
